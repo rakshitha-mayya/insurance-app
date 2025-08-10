@@ -6,7 +6,8 @@ metadata:
   description: Provisioning an EC2 instance and deploying a Java application with Prometheus monitoring.
   tags:
     - backstage
-    - aws_ec2
+    - aws
+    - ec2
     - java
     - prometheus
 spec:
