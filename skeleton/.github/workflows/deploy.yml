@@ -83,10 +83,10 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v4
       with:
-        aws-access-key-id: 
-        aws-secret-access-key: 
+        aws-access-key-id: ASIA3J5HVWH5NNMMTCP5
+        aws-secret-access-key: 4h+q7SGmhEOvDmabT1oMpwKVaCj94vSTgX/XkiII
         aws-region: 'us-east-1'
-        aws-session-token: 
+        aws-session-token: IQoJb3JpZ2luX2VjEKD//////////wEaCXVzLWVhc3QtMSJHMEUCIHd0sVODEnDa45wABXYZ3OWx6d/46urQuM9jkVKebge1AiEA+Sgl61LSe0AD5zp2BrxeWh4oi9Ajp4XuxFAmAEIxNPQq0wMI2f//////////ARAAGgw3NzcyMDM4NTU4NjYiDEdQSZ2grucArOtGjCqnA6AO5EgtE/sZM/2IgdKOUebKyKg/XQtg16wyJRhpTIMXc2M7Rca0B7aQkggq1bwEQ5ZGcPK6JEWRS/PVizzl82WtEiQcL/BNmXFfHqtz0TsgIQWJBGRsRxk2L/lI3koCfJqwL9+TYoPpPE3cLVrTxe2pkcXL6F2AVyO/xl6CGxWgmT4ehi68IaTzcA/B8cKge7P22JM6kBK15sQxI0jbxSoWUzTEV4J5kfRIMeAt15mjMdl5ugft4lUXu6XsKvcufJ7vmVD7MXB2UTY39ZRExrRsB6IneOzBZViQnm7wiGxsKm5D9QP97rkWmwazA9L2pMu60zlPu2GxbYwbv/FyzIeQG+OBWe0cssM1TwQg3IDokLz0va/BXlD5r2ZLVttfOVQ0TBNj6+8KY2ORUR7GI/qaQNtA3Jv4dxg/VMIQ5wZ8xs+wX0ub4T4h4M0G+fffKmIyTwMTjtwSBm7Qzg8a0QDTv27HH9i7OcOQRwvWVQopEMmGLGXk9VxtNZ8rTsxLxiFhxb7H/fJk82tEJLZ/2DrkntJ1LhIBn+sdBs4aBa1IrCrB1/l8mTDL9uLEBjqmARaYbKsfb95J32ObOog6vfhkEOvWGyksirFsxblQVq3vMnxehDOiqgSW+bBogoNUg+HE8C1apbT1TlnIQi5QzUjKvxC0jhRkHGyMRKt07R832hS7NJVEA3FDVip4+OrWFOeXXi9Zm7mZya0puRUO+cIy9UQ+F8G6jZattuSNXdeGrpBrOelddyQ1+e8QLuWJmU0DeDmk0GaLfyO51UNFRJMzdy9rmqc=
 
     - name: Terraform fmt
       id: fmt
