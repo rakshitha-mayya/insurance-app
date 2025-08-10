@@ -2,9 +2,10 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: aws-ec2-instance
-  title: AWS EC2 Instance
-  description: Template to provision an AWS EC2 instance using Terraform
+  title: Complete GP1
+  description: Provisioning an EC2 instance and deploying a Java application with Prometheus monitoring.
   tags:
+    - backstage
     - aws
     - ec2
     - terraform
