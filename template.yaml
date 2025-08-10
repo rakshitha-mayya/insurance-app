@@ -8,8 +8,7 @@ metadata:
     - backstage
     - aws
     - ec2
-    - terraform
-    - infrastructure
+    - Java
 spec:
   owner: user:guest
   type: infrastructure
