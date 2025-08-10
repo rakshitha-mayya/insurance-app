@@ -5,10 +5,10 @@ metadata:
   title: Complete GP1
   description: Provisioning an EC2 instance and deploying a Java application with Prometheus monitoring.
   tags:
-    - aws
-    - ec2
-    - terraform
-    - infrastructure
+    - backstage
+    - aws_ec2
+    - java
+    - prometheus
 spec:
   owner: user:guest
   type: infrastructure
