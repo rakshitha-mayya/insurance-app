@@ -7,8 +7,8 @@ metadata:
   tags:
     - backstage
     - aws
-    - Java
-    - Prometheus
+    - java
+    - prometheus
 spec:
   owner: user:guest
   type: infrastructure
