@@ -27,7 +27,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        repository: 'harihar3/backstage-service-example'
+        repository: 'kjchandan/Backstage-web-Java-code'
 
     - uses: gitleaks/gitleaks-action@v2
       env:
@@ -42,7 +42,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        repository: 'harihar3/backstage-service-example'
+        repository: 'kjchandan/Backstage-web-Java-code'
 
     - uses: actions/setup-java@v4
       with:
