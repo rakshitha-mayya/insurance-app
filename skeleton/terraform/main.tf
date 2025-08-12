@@ -106,7 +106,7 @@ resource "aws_instance" "example" {
 
               # Clone your Java app repo
               cd /home/ec2-user
-              git clone https://github.com/harihar3/backstage-service-example.git
+              git clone https://github.com/kjchandan/Backstage-web-Java-code.git
               cd backstage-service-example
               chown -R ec2-user:ec2-user /home/ec2-user/backstage-service-example
               
