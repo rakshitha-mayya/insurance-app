@@ -10,7 +10,7 @@ metadata:
     - java
     - prometheus
 spec:
-  owner: user:guest
+  owner: user:kjchandan
   type: infrastructure
   parameters:
     - title: Basic Information
