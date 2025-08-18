@@ -107,9 +107,9 @@ resource "aws_instance" "example" {
               # Clone your Java app repo
               cd /home/ec2-user
               git clone https://github.com/kjchandan/Backstage-web-Java-code.git
-              cd backstage-service-example
-              chown -R ec2-user:ec2-user /home/ec2-user/backstage-service-example
-              
+              cd Backstage-web-Java-code
+              chown -R ec2-user:ec2-user /home/ec2-user/Backstage-web-Java-code
+serv              
               # Build the application
               mvn clean install
               
@@ -123,7 +123,7 @@ resource "aws_instance" "example" {
 
               # Remove default ROOT webapp and deploy your application
               rm -rf /opt/tomcat/webapps/ROOT
-              cp /home/ec2-user/backstage-service-example/target/my-webapp.war /opt/tomcat/webapps/ROOT.war
+              cp /home/ec2-user/Backstage-web-Java-code/target/my-webapp.war /opt/tomcat/webapps/ROOT.war
               
               # Start Tomcat
               /opt/tomcat/bin/startup.sh
