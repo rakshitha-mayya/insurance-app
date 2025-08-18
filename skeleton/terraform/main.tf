@@ -109,7 +109,8 @@ resource "aws_instance" "example" {
               git clone https://github.com/kjchandan/Backstage-web-Java-code.git
               cd Backstage-web-Java-code
               chown -R ec2-user:ec2-user /home/ec2-user/Backstage-web-Java-code
-serv              
+
+
               # Build the application
               mvn clean install
               
