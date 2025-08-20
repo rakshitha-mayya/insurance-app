@@ -1,30 +1,29 @@
+# apiVersion: backstage.io/v1alpha1
+# kind: Component
+# # metadata:
+# #   name: backstage
+# #   description: An example of a Backstage application.
+# #   annotations:
+# #     sonarqube.org/project-key: https://sonarcloud.io/project/overview?id=kjchandan_Backstage-web-Java-code
+# #   # Example for optional annotations
+# #   # annotations:
+# #   #   github.com/project-slug: backstage/backstage
+# #   #   backstage.io/techdocs-ref: dir:.
+# # spec:
+# #   type: website
+# #   owner: Chandanjslc2001@gmail.com
+# #   lifecycle: experimental
+# # ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: backstage
-  description: An example of a Backstage application.
+  name: example
   annotations:
-    sonarqube.org/project-key: https://sonarcloud.io/project/overview?id=kjchandan_Backstage-web-Java-code
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
-spec:
-  type: website
-  owner: Chandanjslc2001@gmail.com
-  lifecycle: experimental
-# ---
-# apiVersion: backstage.io/v1alpha1
-# kind: Group
-# metadata:
-#   name: SonarCloud
-#   description: Integration SonarQube
-# spec:
-#   type: team
-#   profile:
-#     email: chandanjslc2001@gmail.com
-#     picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
-#   children: []
+    sonarqube.org/project-key: kjchandan_Backstage-web-Java-code
+  links:
+    - url: https://dashboard.example.com
+      title: My Dashboard
+      icon: dashboard
 
 
 
