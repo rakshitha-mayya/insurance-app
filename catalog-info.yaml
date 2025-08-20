@@ -26,40 +26,4 @@ spec:
     email: chandanjslc2001@gmail.com
     picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
   children: []
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: SonarQube
-  description: SonarQube integration
-spec:
-  type: team
-  profile:
-    email: chandanjslc2001@gmail.com
-    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
-  children: []
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: backstage
-  description: |
-    Backstage is an open-source developer portal that puts the developer experience first.
-  annotations:
-    github.com/project-slug: backstage/backstage
-    backstage.io/techdocs-ref: dir:.
-    lighthouse.com/website-url: https://backstage.io
-    backstage.io/source-location: url:https://github.com/backstage/backstage
-  links:
-    - title: Website
-      url: http://backstage.io
-    - title: Documentation
-      url: https://backstage.io/docs
-    - title: Storybook
-      url: https://backstage.io/storybook
-    - title: Discord Chat
-      url: https://discord.com/invite/EBHEGzX
-spec:
-  type: library
-  owner: CNCF
-  lifecycle: production
+
