@@ -14,17 +14,17 @@ spec:
   owner: Chandanjslc2001@gmail.com
   lifecycle: experimental
 ---
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: SonarCloud
-  description: Integration SonarQube
-spec:
-  type: team
-  profile:
-    email: chandanjslc2001@gmail.com
-    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
-  children: []
+# apiVersion: backstage.io/v1alpha1
+# kind: Group
+# metadata:
+#   name: SonarCloud
+#   description: Integration SonarQube
+# spec:
+#   type: team
+#   profile:
+#     email: chandanjslc2001@gmail.com
+#     picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
+#   children: []
 
 
 
