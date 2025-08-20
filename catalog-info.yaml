@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: backstage
+  namespace: default
   annotations:
     sonarqube.org/project-key: mohannagraj0787
   links:
