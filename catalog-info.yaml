@@ -4,6 +4,7 @@ metadata:
   name: SonarQube
   namespace: default
   annotations:
+    backstage.io/techdocs-ref: dir:.
     sonarqube.org/project-key: backstage_backstage
   links:
     - url: https://dashboard.example.com
