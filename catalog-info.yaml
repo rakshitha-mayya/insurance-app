@@ -4,7 +4,7 @@ metadata:
   name: backstage
   description: An example of a Backstage application.
   annotations:
-    sonarqube.org/project-key: kjchandan_Backstage-web-Java-code
+    sonarqube.org/project-key: https://sonarcloud.io/project/overview?id=kjchandan_Backstage-web-Java-code
   # Example for optional annotations
   # annotations:
   #   github.com/project-slug: backstage/backstage
