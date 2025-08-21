@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:.
     sonarqube.org/project-key: kjchandan_Backstage-web-Java-code
-    github.com/project-slug: 'kjchandan/Backstage_java_template'
+    github.com/project-slug: 'kjchandan/Java-test577875'
   links:
     - url: https://sonarcloud.io/summary/overall?id=kjchandan_Backstage-web-Java-code&branch=master
       title: SonarQube Cloud - Dashboard
