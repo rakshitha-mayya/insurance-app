@@ -7,7 +7,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     sonarqube.org/project-key: kjchandan_Backstage-web-Java-code
   links:
-    - url: https://dashboard.example.com
+    - url: https://sonarcloud.io/project/overview?id=kjchandan_Backstage-web-Java-code
       title: My Dashboard
       icon: dashboard
 spec:
