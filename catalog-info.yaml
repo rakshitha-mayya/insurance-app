@@ -5,7 +5,7 @@ metadata:
   namespace: default
   annotations:
     backstage.io/techdocs-ref: dir:.
-    sonarqube.org/project-key: backstage_backstage
+    sonarqube.org/project-key: kjchandan_Backstage-web-Java-code
   links:
     - url: https://dashboard.example.com
       title: My Dashboard
