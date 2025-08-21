@@ -8,8 +8,11 @@ metadata:
     sonarqube.org/project-key: kjchandan_Backstage-web-Java-code
   links:
     - url: https://sonarcloud.io/summary/overall?id=kjchandan_Backstage-web-Java-code&branch=master
-      title: My Dashboard
+      title: SonarQube Cloud - Dashboard
       icon: dashboard
+    - url: https://cdn.corenexis.com/file?6677455168.png
+      title: SonarQube Dashboard Screenshot
+      icon: image
 spec:
   type: website
   owner: SonarQube
