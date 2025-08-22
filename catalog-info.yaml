@@ -8,7 +8,7 @@ metadata:
     sonarqube.org/project-key: kjchandan_Backstage-web-Java-code
     # sonarqube.org/instance: default
     github.com/project-slug: 'kjchandan/Java-test577875'
-    jenkins.io/job-full-name: 'sample-project'
+    jenkins.io/job-full-name: 'Sample-project'
   links:
     - url: https://sonarcloud.io/summary/overall?id=kjchandan_Backstage-web-Java-code&branch=master
       title: SonarQube Cloud - Dashboard
