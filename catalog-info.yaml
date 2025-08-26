@@ -1,24 +1,28 @@
 apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: sonar-system
+  description: System for SonarQube Integration
+spec:
+  owner: SonarQube
+---
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: SonarQube
+  name: Backstage1
   namespace: default
   annotations:
     backstage.io/techdocs-ref: dir:.
     sonarqube.org/project-key: kjchandan_Backstage-web-Java-code
-    github.com/project-slug: 'kjchandan/Java-test577875'
-    jenkins.io/job-full-name: 'Sample-project'
-    jenkins.io/instance: 'local'
-    
   links:
-    - url: https://sonarcloud.io/summary/overall?id=kjchandan_Backstage-web-Java-code&branch=master
-      title: SonarQube Cloud - Dashboard
+    - url: https://sonarcloud.io/project/overview?id=kjchandan_Backstage-web-Java-code
+      title: My Dashboard
       icon: dashboard
-      
 spec:
   type: website
   owner: SonarQube
   lifecycle: experimental
+  system: sonar-system
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
