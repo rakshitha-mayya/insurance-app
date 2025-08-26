@@ -16,8 +16,8 @@ metadata:
     sonarqube.org/project-key: kjchandan_Backstage-web-Java-code
     github.com/project-slug: 'kjchandan/Java-test577875'
     jenkins.io/job-full-name: 'Sample-project'
-    prometheus.io/alert: 'alertname="Watchdog"'
-    prometheus.io/rule: 'sum by (pod) (rate(http_requests_total[5m]))'
+    prometheus.io/alert: Watchdog
+    # prometheus.io/rule: 'sum by (pod) (rate(http_requests_total[5m]))'
     
     
   links:
