@@ -9,7 +9,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Front-end
+  name: Website
   namespace: default
   annotations:
     backstage.io/techdocs-ref: dir:.
