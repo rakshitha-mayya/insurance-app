@@ -40,3 +40,26 @@ spec:
     email: chandanjslc2001@gmail.com
     picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
   children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Website2
+  namespace: default
+  annotations: 
+    backstage.io/techdocs-ref: dir:.
+    sonarqube.org/project-key: kjchandan_Backstage-web-Java-code
+    github.com/project-slug: 'kjchandan/Java-test577875'
+    jenkins.io/job-full-name: 'Sample-project'
+    prometheus.io/alert: Watchdog
+    prometheus.io/rule: vector(1),sum by (instance) (node_cpu_seconds_total) 
+  
+  links:
+    - url: https://sonarcloud.io/project/overview?id=kjchandan_Backstage-web-Java-code
+      title: My Dashboard
+      icon: dashboard
+spec:
+  type: website
+  owner: SonarQube
+  lifecycle: experimental
+  system: sonar-system
