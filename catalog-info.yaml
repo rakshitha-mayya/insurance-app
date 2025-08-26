@@ -27,7 +27,7 @@ spec:
   type: website
   owner: SonarQube
   lifecycle: experimental
-  system: sonar-system
+  system: Project1
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
