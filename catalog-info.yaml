@@ -17,7 +17,7 @@ metadata:
     github.com/project-slug: 'kjchandan/Java-test577875'
     jenkins.io/job-full-name: 'Sample-project'
     prometheus.io/alert: Watchdog
-    prometheus.io/rule: vector(1),sum by (instance) (node_cpu_seconds_total) 
+    prometheus.io/rule: vector(1) 
   
   links:
     - url: https://sonarcloud.io/project/overview?id=kjchandan_Backstage-web-Java-code
