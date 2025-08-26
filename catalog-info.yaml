@@ -9,16 +9,11 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Backstage1
+  name: SonarQube
   namespace: default
   annotations:
     backstage.io/techdocs-ref: dir:.
     sonarqube.org/project-key: kjchandan_Backstage-web-Java-code
-    github.com/project-slug: 'kjchandan/Java-test577875'
-    jenkins.io/job-full-name: 'Sample-project'
-    jenkins.io/instance: 'local'
-
-    
   links:
     - url: https://sonarcloud.io/project/overview?id=kjchandan_Backstage-web-Java-code
       title: My Dashboard
