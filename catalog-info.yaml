@@ -25,7 +25,7 @@ metadata:
       icon: dashboard
 spec:
   type: website
-  owner: SonarQube
+  owner: Team
   lifecycle: experimental
   system: Project1
 ---
