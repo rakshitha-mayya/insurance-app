@@ -17,7 +17,7 @@ metadata:
     github.com/project-slug: 'kjchandan/Java-test577875'
     jenkins.io/job-full-name: 'Sample-project'
     prometheus.io/alert: Watchdog
-    # prometheus.io/rule: 'sum by (pod) (rate(http_requests_total[5m]))'
+    prometheus.io/rule: vector(1)
     
     
   links:
