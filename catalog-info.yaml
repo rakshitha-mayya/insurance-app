@@ -13,8 +13,8 @@ metadata:
   namespace: default
   annotations: 
     backstage.io/techdocs-ref: dir:.
-    sonarqube.org/project-key: kjchandan_Backstage-web-Java-code
-    github.com/project-slug: 'kjchandan/Java-test577875'
+    sonarqube.org/project-key: kjchandan/new-sample-cluster
+    github.com/project-slug: 'kjchandan/new-sample-cluster'
     jenkins.io/job-full-name: 'Sample-project'
     prometheus.io/alert: Watchdog
     prometheus.io/rule: vector(1) 
