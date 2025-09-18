@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: aws-ec2-instance
-  title: Complete GP1
+  title: Deploying Insurance app on EC2
   description: Provisioning an EC2 instance and deploying a Java application with Prometheus monitoring.
   tags:
     - backstage
