@@ -7,8 +7,8 @@ metadata:
   tags:
     - backstage
     - aws-ec2
-    - java
-    - prometheus
+    - reactjs
+    - insurance
 spec:
   owner: user:kjchandan
   type: infrastructure
