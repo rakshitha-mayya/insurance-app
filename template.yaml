@@ -3,7 +3,7 @@ kind: Template
 metadata:
   name: aws-ec2-instance
   title: Deploying Insurance app on EC2
-  description: Provisioning an EC2 instance and deploying a Java application with Prometheus monitoring.
+  description: Provisioning an EC2 instance and deploying a Insurance application.
   tags:
     - backstage
     - aws-ec2
