@@ -125,14 +125,15 @@ resource "aws_instance" "example" {
               
               npm install
               npm run build
-
+              
+              npm start
               # Deploy build output to Nginx web root
-              rm -rf /usr/share/nginx/html/*
-              cp -r build/* /usr/share/nginx/html/
+              # rm -rf /usr/share/nginx/html/*
+              # cp -r build/* /usr/share/nginx/html/
 
-              # Enable & start Nginx
-              systemctl enable nginx
-              systemctl restart nginx
+              # # Enable & start Nginx
+              # systemctl enable nginx
+              # systemctl restart nginx
               # Install dependencies
               # npm install
               # # Set HOST to 0.0.0.0 and start React dev server with PM2
