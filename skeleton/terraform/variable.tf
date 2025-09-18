@@ -1,5 +1,5 @@
 variable "aws_region" {
-  default = "us-east-1"
+  default = "ap-south-1"
 }
 
 variable "instance_name" {
@@ -17,7 +17,7 @@ variable "subnet_cidr" {
 }
 
 variable "availability_zone" {
-  default = "us-east-1a"
+  default = "ap-south-1a"
 }
 
 variable "instance_type" {
@@ -26,7 +26,7 @@ variable "instance_type" {
 
 variable "ami_id" {
   # Example Amazon Linux 2 AMI for us-east-1 — update if needed
-  default = "ami-0c55b159cbfafe1f0"
+  default = "ami-01b6d88af12965bb6"
 }
 
 variable "key_pair_name" {

@@ -58,8 +58,15 @@ resource "aws_security_group" "ec2_sg" {
 
   ingress {
     description = "HTTP"
-    from_port   = 8080
-    to_port     = 8080
+    from_port   = 3000
+    to_port     = 3000
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    from_port   = 80
+    to_port     = 80
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -90,7 +97,7 @@ resource "aws_security_group" "ec2_sg" {
  
 # EC2 Instance
 resource "aws_instance" "example" {
-  ami                    = "ami-084a7d336e816906b"
+  ami                    = "ami-01b6d88af12965bb6"
   instance_type          = var.instance_type
   subnet_id              = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
@@ -99,35 +106,51 @@ resource "aws_instance" "example" {
               #!/bin/bash
               yum update -y
 
-              # Install Java
-              amazon-linux-extras enable corretto11
-              yum install -y java-11-amazon-corretto git
-              yum install -y maven
+              #!/bin/bash
+              # Update system
+              yum update -y
 
-              # Clone your Java app repo
+              # Install Node.js (LTS) and Git
+              curl -sL https://rpm.nodesource.com/setup_lts.x | bash -
+              yum install -y nodejs git
+
+              # Install PM2 to keep Node.js app running
+              npm install -g pm2
+
+              # Clone your Node.js app repo
               cd /home/ec2-user
-              git clone https://github.com/kjchandan/Backstage-web-Java-code.git
-              cd Backstage-web-Java-code
-              chown -R ec2-user:ec2-user /home/ec2-user/Backstage-web-Java-code
-
-
-              # Build the application
-              mvn clean install
+              git clone https://github.com/Purvash-143/insurance-admin.git app
+              cd app
+              chown -R ec2-user:ec2-user /home/ec2-user/app
               
-              # Setup Tomcat
-              cd /opt
-              curl -O https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.108/bin/apache-tomcat-9.0.108.tar.gz
-              tar -xzf apache-tomcat-9.0.108.tar.gz
-              mv apache-tomcat-9.0.108 tomcat
-              chown -R ec2-user:ec2-user /opt/tomcat
-              chmod +x /opt/tomcat/bin/*.sh           
+              npm install
+              npm run build
 
-              # Remove default ROOT webapp and deploy your application
-              rm -rf /opt/tomcat/webapps/ROOT
-              cp /home/ec2-user/Backstage-web-Java-code/target/my-webapp.war /opt/tomcat/webapps/ROOT.war
+              # Deploy build output to Nginx web root
+              rm -rf /usr/share/nginx/html/*
+              cp -r build/* /usr/share/nginx/html/
+
+              # Enable & start Nginx
+              systemctl enable nginx
+              systemctl restart nginx
+              # Install dependencies
+              # npm install
+              # # Set HOST to 0.0.0.0 and start React dev server with PM2
+              # HOST=0.0.0.0 pm2 start npm --name insurance-dev -- start
               
-              # Start Tomcat
-              /opt/tomcat/bin/startup.sh
+              # # Optional: make PM2 auto-start on reboot
+              # pm2 startup
+              # pm2 save
+              # sudo -u ec2-user pm2 start "npm run start" --name nodeapp
+              # sudo -u ec2-user pm2 startup systemd -u ec2-user --hp /home/ec2-user
+              # sudo -u ec2-user pm2 save
+              # npm run dev
+
+              # Start the app with PM2
+              # pm2 start server.js --name nodeapp
+              # pm2 startup systemd -u ec2-user --hp /home/ec2-user
+              # pm2 save
+              
 
               # Install Prometheus
               cd /opt
@@ -163,7 +186,7 @@ resource "aws_instance" "example" {
                     module: [http_2xx]
                   static_configs:
                     - targets:
-                      - http://localhost:8080
+                      - http://localhost:3000
                   relabel_configs:
                     - source_labels: [__address__]
                       target_label: __param_target
@@ -244,7 +267,7 @@ output "ec2_public_ip" {
 # Output the application URL
 output "application_url" {
   description = "URL to access the Java web application"
-  value       = "http://${aws_instance.example.public_ip}:8080"
+  value       = "http://${aws_instance.example.public_ip}:3000"
 }
 
 # Output the Prometheus URL
