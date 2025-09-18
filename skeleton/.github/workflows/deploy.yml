@@ -61,7 +61,6 @@ jobs:
   #       mvn pmd:check || true
 
   terraform:
-    needs: Code-linting
     name: 'Terraform'
     runs-on: ubuntu-latest
     environment: production
